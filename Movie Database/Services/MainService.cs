@@ -46,7 +46,7 @@ public class MainService : IMainService
                 if (LowerCaseMovieTitles.Contains(movieTitle.ToLower()))
                 {
                     Console.WriteLine("That movie has already been entered");
-                    //logger.Info("Duplicate movie title {Title}", movieTitle);
+                   
                 }
                 else
                 {

@@ -42,7 +42,7 @@ public class FileService : IFileService
     public FileService(ILogger<IFileService> logger)
     {
         _logger = logger;
-        logger.LogInformation("Here is some information");
+        logger.LogInformation("What do you want to do?");
 
         _fileName = $"{Environment.CurrentDirectory}/movies.csv";
 
@@ -54,7 +54,7 @@ public class FileService : IFileService
     public void Read()
     {
         _logger.LogInformation("Reading");
-        Console.WriteLine("*** I am reading");
+        Console.WriteLine("I guess I will read it.");
 
         // create parallel lists of movie details
         // lists must be used since we do not know number of lines of data
